@@ -1,4 +1,4 @@
-package de.studentcorp.monopoly.monopoly.dice;
+package de.studentcorp.monopoly.monopoly.dice.impl;
 
 import static spark.Spark.*;
 
@@ -12,7 +12,7 @@ public class DiceController {
 			
 			@Override
 			public Object handle(Request arg0, Response arg1) throws Exception {
-				return diceService.getDice();
+				return diceService.getRoll();
 			}
 		});
 	}
