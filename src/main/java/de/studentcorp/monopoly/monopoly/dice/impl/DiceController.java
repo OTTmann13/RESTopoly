@@ -8,8 +8,7 @@ import spark.Route;
 
 public class DiceController {
 	public DiceController(final DiceService diceService){
-		get("/roll", new Route() {
-			
+		get("/dice", new Route() {
 			@Override
 			public Object handle(Request arg0, Response arg1) throws Exception {
 				return diceService.getRoll();
