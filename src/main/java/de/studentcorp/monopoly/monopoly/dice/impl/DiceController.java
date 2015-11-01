@@ -11,7 +11,7 @@ public class DiceController {
 		get("/dice", new Route() {
 			@Override
 			public Object handle(Request arg0, Response arg1) throws Exception {
-				return diceService.getRoll();
+				return "{ \"number\": "+ diceService.getRoll() +" }";
 			}
 		});
 	}
